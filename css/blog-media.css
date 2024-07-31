@@ -1,0 +1,97 @@
+
+
+@media (max-width: 1200px) {
+    header{
+        padding: 20px 12px 20px 12px;
+        max-width: 868px;
+        margin: auto;
+    }
+    .container{
+        padding: 0 12px;
+    }
+    .Featured-works{
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    body.lock{
+        overflow: hidden;
+    }
+    header{
+        padding: 0px;
+    }
+    header .header_logo{
+        position: relative;
+        z-index: 2;
+        margin-left: 12px;
+        margin-top: 12px;
+    }
+    header  nav{
+        position: fixed;
+        width: 100%;
+        background-color: #FF6464;
+        top: -100%;
+        transition: 0.5s ease-in-out;
+    }
+    header  nav ul{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header  nav ul li{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    header  nav.active{
+        height: 100%;
+        top: 0px;
+        padding: 150px;
+    }
+    header .header_burger{
+        width: 30px;
+        height: 20px;
+        display: block;
+        position: relative;
+        z-index: 2;
+        margin-right: 12px;
+    }
+    header .header_burger span{
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        top: 9px;
+    }
+    header .header_burger:before,
+    header .header_burger::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: 0.2s ease-in;
+    }
+    header .header_burger:before{
+        top: 0px;
+    }
+    header .header_burger::after{
+        bottom: 0px;
+    }
+    header .header_burger.active:before{
+        top: 9px;
+        transform: rotate(45deg);
+    }
+    header .header_burger.active::after{
+        bottom: 9px;
+        transform: rotate(-45deg);
+    }
+    header .header_burger.active span{
+        transform: scale(0);
+    }
+    .Featured-works .container h4{
+        text-align: center;
+    }
+}
