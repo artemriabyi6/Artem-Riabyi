@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index-media.css">
-    <title>Jonh</title>
+    <title>Artem Riabyi</title>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
                     <p>Here will be information about me and my training sessions. Do you like it? Subcribe button down below</p>
                     <a href="#">Subscribe</a>
                 </div>
-                <div class="main_pic">
+                <div class="main-pic">
                     <img src="images/artem.JPG" alt="photo">
                 </div>
             </div>
@@ -53,33 +53,71 @@
             <div class="container">
                 <div class="links">
                     <a class="Recent-posts" href="#">Recent posts</a>
-                    <a class="View-all" href="#">View all</a>
+                    <a class="View-all" id="view-all"  href="#">View all</a>
                 </div>
-                <div class="article-flex">
-                    <article>
-                        <video src="videos/Training-20.07.2024.mp4" controls autoplay muted loop>
-                           
-                        </video>
-                        <!-- <h4>Making a design system from scratch</h4>
-                        <span>12 Feb 2020</span>
-                        <span>Design, Pattern</span>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> -->
+                <div class="article-flex" id="slider-box">
+                    <article class="slide">
+                        <video  src="videos/Training-20.07.2024.mp4" controls  muted loop></video>
+                    </article class="slide">
+                    <article class="slide">
+                        <video src="videos/IMG_E3635.Mp4" controls  muted loop></video>
                     </article>
-                    <article>
-                        <video src="videos/IMG_E3635.Mp4" controls autoplay muted loop></video>
-                        <!-- <h4>Making a design system from scratch</h4>
-                        <span>12 Feb 2020</span>
-                        <span>Design, Pattern</span>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> -->
+                    <article class="slide">
+                        <video  src="videos/Exercise.MP4" controls  muted loop></video>
+                    </article >
+                    <article  class="slide" hidden>
+                        <video  src="videos/IMG_0462.mp4" controls  muted loop></video>
+                    </article >
+                    <article  class="slide" hidden>
+                        <video  src="videos/IMG_0463.Mp4" controls  muted loop></video>
                     </article>
-                    <article>
-                        <video src="videos/Exercise.MP4" controls autoplay muted loop></video>
-                        <!-- <h4>Making a design system from scratch</h4>
-                        <span>12 Feb 2020</span>
-                        <span>Design, Pattern</span>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> -->
+                    <article  class="slide" hidden>
+                        <video  src="videos/IMG_0464.Mp4" controls  muted loop></video>
                     </article>
+                    <article  class="slide" hidden>
+                        <video  src="videos/IMG_0465.Mp4" controls  muted loop></video>
+                    </article >
+                    <article  class="slide" hidden>
+                        <video  src="videos/IMG_0467.Mp4" controls  muted loop></video>
+                    </article>
+                    <article  class="slide" hidden>
+                        <video  src="videos/IMG_0469.mp4" controls  muted loop></video>
+                    </article>
+                    <button class="arrow" id="right-arrow" onclick="nextSlide()">&#10095</button>
+                    <button class="arrow" id="left-arrow" onclick="prevSlide()">&#10094</button>
                 </div>
+                <div  class="less" id="slider-box-all">
+                    <article class="slide">
+                        <video  src="videos/Training-20.07.2024.mp4" controls  muted loop></video>
+                    </article class="slide">
+                    <article class="slide">
+                        <video src="videos/IMG_E3635.Mp4" controls  muted loop></video>
+                    </article>
+                    <article class="slide">
+                        <video  src="videos/Exercise.MP4" controls  muted loop></video>
+                    </article >
+                    <article  class="slide" hidden>
+                        <video  src="videos/IMG_0462.mp4" controls  muted loop></video>
+                    </article >
+                    <article  class="slide" hidden>
+                        <video  src="videos/IMG_0463.Mp4" controls  muted loop></video>
+                    </article>
+                    <article  class="slide" hidden>
+                        <video  src="videos/IMG_0464.Mp4" controls  muted loop></video>
+                    </article>
+                    <article  class="slide" hidden>
+                        <video  src="videos/IMG_0465.Mp4" controls  muted loop></video>
+                    </article >
+                    <article  class="slide" hidden>
+                        <video  src="videos/IMG_0467.Mp4" controls  muted loop></video>
+                    </article>
+                    <article  class="slide" hidden>
+                        <video  src="videos/IMG_0469.mp4" controls  muted loop></video>
+                    </article>
+                    <button class="arrow" id="right-arrow" onclick="nextSlide()">&#10095</button>
+                    <button class="arrow" id="left-arrow" onclick="prevSlide()">&#10094</button>
+                </div>
+                
             </div>
         </section>
 
